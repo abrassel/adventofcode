@@ -57,10 +57,7 @@ fn main() {
                 })
                 .unwrap();
             match median {
-                medians::Medians::Odd(&median) => {
-                    // println!("For {:?}: median: {:?}", nums, median);
-                    median
-                }
+                medians::Medians::Odd(&median) => median,
                 medians::Medians::Even(_) => unreachable!(),
             }
         })
