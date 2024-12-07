@@ -15,8 +15,8 @@ fn parse_input() -> u64 {
     let re = Regex::new(r"(mul\((?<left>\d{1,3}),(?<right>\d{1,3})\))|do\(\)|don't\(\)").unwrap();
     re.captures_iter(&buf)
         .map(|c| {
-            c.name("left").unwrap().as_str().parse().unwrap()
-                * c.name("right").unwrap().as_str().parse().unwrap()
+            c.name("left").unwrap().as_str().parse::<u64>().unwrap()
+                * c.name("right").unwrap().as_str().parse::<u64>().unwrap()
         })
         .sum()
 }
