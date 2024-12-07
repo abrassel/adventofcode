@@ -1,7 +1,6 @@
 #![feature(try_blocks)]
 
 use std::{
-    collections::HashSet,
     fs::File,
     io::{BufRead, BufReader},
 };
@@ -50,7 +49,6 @@ struct Maze {
     row_major: Vec<Vec<usize>>,
     col_major: Vec<Vec<usize>>,
     pos: (usize, usize, Direction),
-    visited: HashSet<(usize, usize)>,
 }
 
 impl Maze {
@@ -84,7 +82,6 @@ impl Maze {
             row_major,
             col_major,
             pos: start.unwrap(),
-            visited: Default::default(),
         }
     }
 

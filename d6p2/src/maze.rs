@@ -5,7 +5,6 @@ use std::{
 };
 
 use derive_more::derive::From;
-use itertools::Itertools;
 
 use crate::{
     INPUT,
@@ -182,37 +181,5 @@ impl Maze {
             .binary_search(&new_barrier.1)
             .unwrap_err();
         self.row_major[new_barrier.0].insert(loc, new_barrier.1);
-    }
-
-    pub fn print_with_path(&self, path: &Path) {
-        let mut entire = vec![vec!['.'; self.col_major.len()]; self.row_major.len()];
-        for (ridx, row) in self.row_major.iter().enumerate() {
-            for cidx in row {
-                entire[ridx][*cidx] = '#';
-            }
-        }
-
-        for (row, col) in path.iter() {
-            entire[row][col] = 'O';
-        }
-
-        for row in entire {
-            println!("{}", row.iter().join(""));
-        }
-        println!();
-    }
-
-    pub fn print(&self) {
-        let mut entire = vec![vec!['.'; self.col_major.len()]; self.row_major.len()];
-        for (ridx, row) in self.row_major.iter().enumerate() {
-            for cidx in row {
-                entire[ridx][*cidx] = '#';
-            }
-        }
-
-        for row in entire {
-            println!("{}", row.iter().join(""));
-        }
-        println!();
     }
 }

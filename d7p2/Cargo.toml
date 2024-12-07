@@ -1,11 +1,9 @@
 [package]
-name = "d6p2"
+name = "d7p2"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 anyhow = "1.0.94"
-derive_more = { version = "1.0.0", features = ["from"] }
-ilog = "1.0.1"
 itertools = "0.13.0"
 rayon = "1.10.0"
