@@ -32,7 +32,6 @@ fn main() {
         })
         .flatten()
         .into_group_map();
-    let mut pts = vec![];
     let unique_antinodes = antennas
         .values()
         .map(|same_freq| {
@@ -43,10 +42,6 @@ fn main() {
                 .flatten()
         })
         .flatten()
-        .map(|x| {
-            pts.push(x);
-            x
-        })
         .unique()
         .count();
 
