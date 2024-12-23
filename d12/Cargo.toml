@@ -1,0 +1,16 @@
+[package]
+name = "d12"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d12p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d12p2"
+path = "src/p2.rs"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = ["constructor", "from"] }
+itertools = "0.13.0"
