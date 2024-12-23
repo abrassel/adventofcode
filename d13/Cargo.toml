@@ -1,0 +1,23 @@
+[package]
+name = "d13"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d13p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d13p2"
+path = "src/p2.rs"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = [
+    "add",
+    "constructor",
+    "from",
+    "mul",
+] }
+itertools = "0.13.0"
+rayon = "1.10.0"
+regex = "1.11.1"
