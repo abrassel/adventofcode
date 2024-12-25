@@ -1,0 +1,15 @@
+[package]
+name = "d15"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d15p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d15p2"
+path = "src/p2.rs"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = ["constructor", "default", "display", "from", "mul"] }
