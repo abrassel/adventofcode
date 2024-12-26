@@ -1,0 +1,17 @@
+[package]
+name = "d17"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d17p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d17p2"
+path = "src/p2.rs"
+
+[dependencies]
+enum_dispatch = "0.3.13"
+itertools = "0.13.0"
+strum = { version = "0.26.3", features = ["derive"] }
