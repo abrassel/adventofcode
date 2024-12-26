@@ -1,0 +1,16 @@
+[package]
+name = "d18"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d18p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d18p2"
+path = "src/p2.rs"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = ["display"] }
+rustc-hash = "2.1.0"
