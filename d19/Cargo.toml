@@ -1,0 +1,16 @@
+[package]
+name = "d19"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ascii = "1.1.0"
+rustc-hash = "2.1.0"
+
+[[bin]]
+name = "d19p1"
+path = "src/p1.rs"
+
+[[bin]]
+name = "d19p2"
+path = "src/p2.rs"
