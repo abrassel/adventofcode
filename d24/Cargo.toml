@@ -1,0 +1,13 @@
+[package]
+name = "d24"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = ["add", "constructor", "mul"] }
+itertools = "0.13.0"
+regex = "1.11.1"
+ascii = "1.1.0"
+rustc-hash = "2.1.0"
+strum = { version = "0.26.3", features = ["derive"] }
+enum_dispatch = "0.3.13"

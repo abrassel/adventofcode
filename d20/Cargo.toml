@@ -1,0 +1,17 @@
+[package]
+name = "d20"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "d20p1"
+path = "src/p1.rs"
+
+[dependencies]
+derive_more = { version = "1.0.0", features = [
+    "constructor",
+    "from",
+    "display",
+] }
+itertools = "0.13.0"
+rustc-hash = "2.1.0"
