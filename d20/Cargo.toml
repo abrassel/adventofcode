@@ -7,6 +7,10 @@ edition = "2024"
 name = "d20p1"
 path = "src/p1.rs"
 
+[[bin]]
+name = "d20p2"
+path = "src/p2.rs"
+
 [dependencies]
 derive_more = { version = "1.0.0", features = [
     "constructor",

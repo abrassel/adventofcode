@@ -6,6 +6,7 @@ use std::{
 
 use maze::{Maze, Point};
 
+pub mod cheats;
 pub mod maze;
 
 pub struct Setup {
